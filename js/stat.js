@@ -48,7 +48,7 @@ window.renderStatistics = function(ctx, players, times) {
         if (players[i] == 'Вы') {
             ctx.fillStyle = "rgba(255, 0, 0, 1)";
         } else {
-            ctx.fillStyle = "rgba(0, 0, 255, " + Math.random();
+            ctx.fillStyle = "rgba(0, 0, 255, " + Math.random() + ")";
         }
         ctx.fillRect(CLOUD_X + FONT_GAP + (CLOUD_WIDTH / players.length) * i, CLOUD_HEIGHT - FONT_GAP - GAP - (barHeight * times[i]) / maxTime, 40, (barHeight * times[i]) / maxTime);
         ctx.fillStyle = "rgba(0, 0, 0, 1)";
